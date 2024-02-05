@@ -30,7 +30,3 @@ def imageFromSet(dataset, index=0):
         for j in range(32):
             img[j][i] = [redRows[j][i], greenRows[j][i], blueRows[j][i]]
     return np.array(img)
-
-cv2.imwrite('img.png', imageFromSet(TRAINING1))
-cv2.imshow('img', imageFromSet(TRAINING1))
-cv2.waitKey(0)
